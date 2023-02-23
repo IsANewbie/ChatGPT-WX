@@ -5,6 +5,9 @@ logging:
     me.chanjar.weixin: DEBUG
 server:
   port: 8082
+  servlet:
+    context-path: /weixin
+
 spring:
   mvc:
     async:
@@ -16,10 +19,10 @@ wx:
       host: 127.0.0.1
       port: 6379
     configs:
-      - appId: 1111 # 第一个公众号的appid
-        secret: 1111 # 公众号的appsecret
-        token: 111 # 接口配置里的Token值
-        aesKey: 111 # 接口配置里的EncodingAESKey值
+      - appId: wxfdf99b949cc54883 # 第一个公众号的appid
+        secret: 80b80bdae0688e028acf633c6779cdb9 # 公众号的appsecret
+        token: 7bf697cfc07b7c276ea9ac49c9f048dc # 接口配置里的Token值
+        aesKey: DuajCq5pH2uqIvaxq0nhkHPbL9FaEyyTCJslNhAWeeW # 接口配置里的EncodingAESKey值
 
 openai:
   key: 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
